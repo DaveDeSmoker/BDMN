@@ -119,7 +119,6 @@ bot.on("guildMemberAdd", member => {
     }
 
 
-});
 
 
 
