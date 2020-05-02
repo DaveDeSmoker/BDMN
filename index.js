@@ -36,7 +36,7 @@ bot.on("ready", async () => {
 });
 
 bot.on("guildMemberAdd", member => {
-    var role = member.guild.roles.find("name", "Customers");
+    var role = member.guild.roles.find("name", "Visitors");
 
     if (!role) return;
 
