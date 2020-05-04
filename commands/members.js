@@ -7,7 +7,7 @@ module.exports.run = async(bot, message, args) => {
 
     var membersEmbed = new discord.RichEmbed()
         .setTitle("SERVER INFO")
-        .setColor("#660066")
+        .setColor("#000000")
         .setThumbnail(icon)
         .setDescription(`**Members**\n ${message.guild.memberCount}`)
         .setTimestamp()
