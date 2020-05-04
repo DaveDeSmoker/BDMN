@@ -98,8 +98,8 @@ bot.on("message", async message => {
             .setFooter('MemoriaNetwork', botIcon);
 
         return message.channel.send(database);
-  }
-}
+  })
+});
 
 
 
