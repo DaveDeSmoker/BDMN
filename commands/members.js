@@ -11,7 +11,7 @@ module.exports.run = async(bot, message, args) => {
         .setThumbnail(icon)
         .setDescription(`**Members**\n ${message.guild.memberCount}`)
         .setTimestamp()
-        .setFooter('BDMN', botIcon);
+        .setFooter('BDMN - Members', botIcon);
 
 
 
