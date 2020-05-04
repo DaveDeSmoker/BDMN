@@ -49,7 +49,6 @@ bot.on("guildMemberAdd", member => {
 
 
 // });
-   } 
     if (command === `${prefix}database`) {
         var botIcon = bot.user.displayAvatarURL;
 
@@ -62,7 +61,7 @@ bot.on("guildMemberAdd", member => {
 
         return message.channel.send(database);
   }
-
+}
 
 
 
