@@ -100,15 +100,6 @@ bot.on("message", async message => {
 
         return message.channel.send(database);
   }
-    if(command === `${prefix}spam`) {
-    	if(!message.author.id === YourDiscordID) return;
-    	let Ping = message.mentions.users.first();
-    	setInterval(function(){
-    		Ping.send(SpamMessage)
-    	},
-    		1200
-    	);
-    };
 });
 
 
