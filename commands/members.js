@@ -6,10 +6,10 @@ module.exports.run = async(bot, message, args) => {
     var icon = message.guild.iconURL;
 
     var membersEmbed = new discord.RichEmbed()
-        .setTitle("SERVER INFO")
+        .setTitle("SERVER")
         .setColor("#000000")
         .setThumbnail(icon)
-        .setDescription(`**Members**\n ${message.guild.memberCount}`)
+        .setDescription(`**Hackers**\n ${message.guild.memberCount}`)
         .setTimestamp()
         .setFooter('BDMN - Members', botIcon);
 
