@@ -95,7 +95,7 @@ bot.on("message", async message => {
             .setColor("#000000")
             .addField("Site: ", "COMING SOON")
             .setTimestamp()
-            .setFooter('MemoriaNetwork', botIcon);
+            .setFooter('BDMN - Database', botIcon);
 
         return message.channel.send(database);
   }
