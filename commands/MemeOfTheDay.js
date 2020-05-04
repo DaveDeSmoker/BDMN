@@ -14,7 +14,7 @@ module.exports.run = async(bot, message, args) => {
             .setColor("#660066")
             .setDescription(`Make an announcement using: \n !meme message ${splitser} color ${splitser} channel name ${splitser} title ${splitser} photo gyazo`)
             .setTimestamp()
-            .setFooter('MemoriaNetwork', botIcon);
+            .setFooter('BDMN - Meme Of The Day', botIcon);
 
         return message.channel.send(useMessage);
             
@@ -25,7 +25,7 @@ module.exports.run = async(bot, message, args) => {
         if(args[1] == undefined) args[1] = "#000000";
         if(args[2] == undefined) args[2] = "english-chat";
         if(args[3] == undefined) args[3] = "Meme Of The Day";
-        if(args[4] == undefined) args[4] = "https://gyazo.com/959f3604a16698d1034655167b0004df";
+        if(args[4] == undefined) args[4] = "https://imgur.com/72K0T34";
         var options = {
 
             bericht: args[0] ||"NO INFORMATION",
@@ -41,11 +41,11 @@ module.exports.run = async(bot, message, args) => {
 
         var announcementEmbed = new discord.RichEmbed()
         .setTitle(` ${options.naam} `)
-        .setThumbnail(` ${options.photo} `)
         .setColor(` ${options.kleur} `)
         .setDescription(`\n ${options.bericht} \n`)
+        .setImage(` ${options.photo} `)
         .setTimestamp()
-        .setFooter(`MemoriaNetwork`, botIcon);
+        .setFooter(`BDMN - Meme Of The Day`, botIcon);
 
     var announcementChannel = message.guild.channels.find(`name`, options.kanaal);
     if(!announcementChannel) return message.channel.send("Cannot find the channel!");
