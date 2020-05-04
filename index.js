@@ -49,7 +49,20 @@ bot.on("guildMemberAdd", member => {
 
 
 // });
+    if (command === `${prefix}database`) {
+        var botIcon = bot.user.displayAvatarURL;
 
+        var database = new discord.RichEmbed()
+            .setDescription("DATABASE")
+            .setColor("#ee0000")
+            .addField("Site: ", "COMING SOON")
+            .setTimestamp()
+            .setFooter('MemoriaNetwork', botIcon);
+
+        return message.channel.send(database);
+
+    
+});
 
 
 
