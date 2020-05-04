@@ -92,7 +92,7 @@ bot.on("message", async message => {
 
         var database = new discord.RichEmbed()
             .setDescription("DATABASE")
-            .setColor("#ee0000")
+            .setColor("#000000")
             .addField("Site: ", "COMING SOON")
             .setTimestamp()
             .setFooter('MemoriaNetwork', botIcon);
