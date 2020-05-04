@@ -49,6 +49,7 @@ bot.on("guildMemberAdd", member => {
 
 
 // });
+   } 
     if (command === `${prefix}database`) {
         var botIcon = bot.user.displayAvatarURL;
 
