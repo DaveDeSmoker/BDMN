@@ -3,7 +3,7 @@ const botConfig = require("./botconfig.json");
 
 const fs = require("fs");
 const SpamMessage = "Test.";
-const YourDiscordID = DaveDeSmoker#4271;
+const YourDiscordID = 456853462706028555;
 
 const bot = new discord.Client();
 bot.commands = new discord.Collection();
