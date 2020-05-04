@@ -60,7 +60,7 @@ bot.on("guildMemberAdd", member => {
             .setFooter('MemoriaNetwork', botIcon);
 
         return message.channel.send(database);
-
+    }
     
 });
 
